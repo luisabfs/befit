@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Usuario.CadastrarUsuarioActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    tools:context=".Usuario.LoginActivity">
+
+    <ImageView
+        android:id="@+id/id_help"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        app:srcCompat="@drawable/ic_help_white_24dp" />
+
+    <ImageView
+        android:id="@+id/id_marca"
+        android:layout_width="251dp"
+        android:layout_height="119dp"
+        android:layout_gravity="center"
+        android:layout_margin="6dp"
+        android:baselineAligned="false"
+        android:paddingLeft="17dp"
+        android:scaleType="fitCenter"
+        android:scaleX="2.3"
+        android:scaleY="2.3"
+        app:srcCompat="@drawable/ic_marca_befit" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/id_til_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/id_email_login"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@drawable/campos"
+            android:hint="@string/hint_email"
+            android:inputType="textWebEmailAddress"
+            android:paddingLeft="10dp"
+            android:textColorHint="@android:color/background_dark" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/id_til_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        app:passwordToggleEnabled="true">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/id_senha_login"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@drawable/campos"
+            android:hint="@string/hint_senha"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/id_recuperar_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="8dp"
+        android:text="Esqueceu sua senha?" />
+
+    <Button
+        android:id="@+id/id_botao_login"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/screen_border"
+        android:backgroundTint="@color/colorAccent"
+        android:elevation="4dp"
+        android:text="@string/button_login"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Não possui uma conta?" />
+
+    <Button
+        android:id="@+id/id_botao_cadastro_login"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:background="@drawable/screen_border"
+        android:text="Cadastre-se" />
+
+
+</LinearLayout>
+</ScrollView>

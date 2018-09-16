@@ -1,0 +1,53 @@
+<resources>
+    <string name="google_maps_API_key">AIzaSyCJo2zbzGsM8nhcQXlT_4wyDwJT4Hh8Qu4</string>
+    <string name="app_name">BeFit</string>
+
+    <string name="hint_senha">Senha</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_nome">Nome Completo</string>
+    <string name="hint_idade">Idade</string>
+    <string name="hint_sexo">Sexo</string>
+    <string name="hint_celular">Celular</string>
+    <string name="hint_estado">Estado</string>
+    <string name="hint_cidade">Cidade</string>
+    <string name="hint_descricao">Descrição</string>
+
+    <string name="button_login">Login</string>
+    <string name="button_recuperarSenha">Recuperar senha</string>
+    <string name="button_reenviarEmail">Reenviar e-mail</string>
+    <string name="button_usuario">Usuário</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_help">Ajuda e Opções</string>
+    <string name="title_activity_configuracoes">Configurações</string>
+
+    <string name="text_checkEmail">Um link de confirmação foi enviado ao seu e-mail.</string>
+    <string name="text_confirmarEmail">Assim que o seu e-mail for verificado, você terá acesso ao aplicativo e irá para a tela principal.</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="menu_excluir_usuario">Excluir conta</string>
+
+    <string name="help_opcao1">Reenviar e-mail de confirmação de cadastro.</string>
+    <string name="help_opcao2">Enviar e-mail de redefinição de senha.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_titulo">Título</string>
+    <string name="text_data">Data</string>
+    <string name="button_escolher_data">Escolher data</string>
+    <string name="hint_data">Data</string>
+    <string name="text_atividade_privada">Privada</string>
+    <string name="text_modalidade">Modalidade</string>
+    <string name="hint_horario">Horário</string>
+    <string name="button_escolher_horario">Escolher horário</string>
+    <string name="hint_local">Local</string>
+    <string name="hint_endereco">Endereço</string>
+    <string name="hint_horario_inicio">Horário de Início</string>
+    <string name="hint_horario_fim">Horário de Término</string>
+    <string name="hint_nome_mod">Nome</string>
+    <string name="menu_sair">Sair</string>
+    <string name="_8942">⋮</string>
+</resources>

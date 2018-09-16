@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0097a7</color>
+    <color name="colorPrimaryDark">#097b89</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="preta">#000000</color>
+    <color name="branca">#ffffff</color>
+    <color name="cinza"></color>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mayar.befit.Usuario.ExcluirUsuarioActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/idtextinputlayoutsenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:textColorHint="@color/colorAccent"
+        app:passwordToggleEnabled="true">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/id_senha_alert_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@drawable/campos"
+            android:hint="@string/hint_senha"
+            android:inputType="textPassword"
+            android:textColor="@color/preta"
+            android:paddingLeft="10dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+</android.support.constraint.ConstraintLayout>

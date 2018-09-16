@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#4dd0e1"
+    app:popupTheme="@style/AppTheme.PopupOverlay"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:elevation="2dp">
+
+    <ImageView
+        android:id="@+id/id_voltar"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:srcCompat="@drawable/ic_arrow_back_white_48dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/marca_toolbar"
+            android:layout_width="125dp"
+            android:layout_height="58dp"
+           android:layout_marginRight="16dp"
+            android:scaleType="fitCenter"
+            android:scaleX="2.3"
+            android:scaleY="2.3"
+            app:srcCompat="@drawable/ic_marca_befit"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>
+

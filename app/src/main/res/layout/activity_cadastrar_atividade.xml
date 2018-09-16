@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Usuario.CadastrarUsuarioActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:isScrollContainer="true">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient"
+        android:orientation="vertical"
+        tools:context="com.example.mayar.befit.Atividade.CadastrarAtividadeActivity">
+
+        <include android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/id_til_titulo_atividade"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            tools:ignore="MissingConstraints">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/id_titulo_atividade"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:maxLines="1"
+                android:hint="@string/hint_titulo"
+                android:paddingLeft="10dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/id_til_descricao_atividade"
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_til_titulo_atividade"
+            tools:ignore="MissingConstraints">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/id_descricao_atividade"
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/campos"
+                android:gravity="top"
+                android:hint="@string/hint_descricao"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/id_til_data_atividade"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_til_descricao_atividade"
+            tools:ignore="MissingConstraints">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/id_data_atividade"
+                android:layout_width="180dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:editable="false"
+                android:hint="@string/text_data"
+                android:paddingLeft="10dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/id_botao_escolher_data"
+            android:layout_width="150dp"
+            android:layout_height="38dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/screen_border"
+            android:padding="8dp"
+            android:text="@string/button_escolher_data"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.413"
+            app:layout_constraintStart_toEndOf="@+id/id_til_data_atividade"
+            app:layout_constraintTop_toBottomOf="@+id/id_til_descricao_atividade"
+            tools:ignore="MissingConstraints" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/id_til_horario_inicio_atividade"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_til_data_atividade"
+            tools:ignore="MissingConstraints">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/id_horario_inicio_atividade"
+                android:layout_width="180dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:editable="false"
+                android:hint="@string/hint_horario_inicio"
+                android:paddingLeft="10dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/id_botao_escolher_horario_inicio"
+            android:layout_width="150dp"
+            android:layout_height="38dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/screen_border"
+            android:padding="8dp"
+            android:text="@string/button_escolher_horario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.416"
+            app:layout_constraintStart_toEndOf="@+id/id_til_horario_inicio_atividade"
+            app:layout_constraintTop_toBottomOf="@+id/id_botao_escolher_data"
+            tools:ignore="MissingConstraints" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/id_til_horario_fim_atividade"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_til_horario_inicio_atividade"
+            tools:ignore="MissingConstraints">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/id_horario_fim_atividade"
+                android:layout_width="180dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:editable="false"
+                android:hint="@string/hint_horario_fim"
+                android:paddingLeft="10dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/id_botao_escolher_horario_fim"
+            android:layout_width="150dp"
+            android:layout_height="38dp"
+            android:layout_gravity="right"
+
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/screen_border"
+            android:padding="8dp"
+            android:text="@string/button_escolher_horario"
+            app:layout_constraintBottom_toTopOf="@+id/id_botao_mapa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.416"
+            app:layout_constraintStart_toEndOf="@+id/id_til_horario_fim_atividade"
+            app:layout_constraintTop_toBottomOf="@+id/id_botao_escolher_horario_inicio"
+            app:layout_constraintVertical_bias="0.729"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/id_botao_mapa"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/screen_border"
+            android:padding="8dp"
+            android:text="abrir mapa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.416"
+            app:layout_constraintTop_toBottomOf="@id/id_til_horario_fim_atividade"
+            tools:ignore="MissingConstraints" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/id_til_local_atividade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_botao_mapa"
+            tools:ignore="MissingConstraints">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/id_local_atividade"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="@string/hint_local"
+                android:editable="false"
+                android:maxLines="1"
+                android:paddingLeft="10dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/id_til_endereco_atividade"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_til_local_atividade"
+            tools:ignore="MissingConstraints">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/id_endereco_atividade"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:editable="false"
+                android:hint="@string/hint_endereco"
+                android:paddingLeft="10dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:text="@string/text_modalidade"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/id_til_endereco_atividade"
+            tools:ignore="MissingConstraints" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <CheckBox
+            android:id="@+id/cb_tipo_atividade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_atividade_privada"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@id/id_botao_cadastrar_atividade"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.054"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="26dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@+id/cb_tipo_atividade"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+            app:srcCompat="@drawable/ic_lock" />
+
+        <Button
+            android:id="@+id/id_botao_cadastrar_atividade"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/screen_border"
+            android:backgroundTint="@color/colorAccent"
+            android:elevation="4dp"
+            android:text="Cadastrar"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

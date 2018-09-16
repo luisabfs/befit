@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_usuario"
+            android:icon="@drawable/ic_user_round"
+            android:title="Usuario" />
+
+        <item
+        android:id="@+id/nav_atividade"
+        android:icon="@drawable/ic_user_round"
+        android:title="Atividade" />
+
+        <item
+            android:id="@+id/nav_modalidade"
+            android:icon="@drawable/ic_user_round"
+            android:title="Modalidade" />
+
+        <item
+            android:id="@+id/nav_minhas_atividades"
+            android:icon="@drawable/ic_user_round"
+            android:title="Minhas Atividades" />
+    </group>
+
+    <item android:title="Outros">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic__menu_exit_to_app"
+                android:title="Sair" />
+        </menu>
+    </item>
+
+</menu>

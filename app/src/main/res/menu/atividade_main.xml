@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_alterar_atividade"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:icon="@drawable/ic__menu_exit_to_app"
+        android:title="Alterar dados" />
+    <item
+        android:id="@+id/menu_finalizar_atividade"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:icon="@drawable/ic__menu_exit_to_app"
+        android:title="Finalizar atividade" />
+    <item
+        android:id="@+id/menu_excluir_atividade"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:icon="@drawable/ic__menu_exit_to_app"
+        android:title="Excluir atividade" />
+</menu>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        cardCornerRadius="10dp"
+        cardMaxElevation="2dp"
+        cardElevation="1dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/gradient"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_listar_parti_adm"
+            android:layout_width="match_parent"
+            android:background="#FFFF"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/id_foto_listar_parti_adm"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@color/preta" />
+
+            <TextView
+                android:id="@+id/id_nome_listar_parti_adm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome Usuário"
+                android:layout_toRightOf="@id/id_foto_listar_parti_adm"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/preta"
+                android:layout_marginTop="12dp"
+                android:textSize="18dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="20sp"/>
+
+            <TextView
+                android:id="@+id/id_cidade_listar_parti_adm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cidade,"
+                android:layout_below="@+id/id_nome_listar_parti_adm"
+                android:layout_toRightOf="@id/id_foto_listar_parti_adm"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/preta"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="15sp"/>
+
+            <TextView
+                android:id="@+id/id_idade_listar_parti_adm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Idade"
+                android:layout_below="@+id/id_nome_listar_parti_adm"
+                android:layout_toRightOf="@id/id_cidade_listar_parti_adm"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/preta"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="15sp"/>
+
+            <TextView
+                android:id="@+id/id_telefone_listar_parti_adm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefone"
+                android:layout_below="@+id/id_cidade_listar_parti_adm"
+                android:layout_toRightOf="@id/id_foto_listar_parti_adm"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/preta"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="15sp"/>
+
+            <com.example.mayar.befit.Adapter.CustomImageView
+                android:id="@+id/id_recusar_parti"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/id_aprovar_parti"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="13dp"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/ic_recusar_round" />
+
+            <com.example.mayar.befit.Adapter.CustomImageView
+                android:id="@+id/id_aprovar_parti"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/id_recusar_parti"
+                android:layout_alignStart="@+id/id_recusar_parti"
+                android:layout_alignTop="@+id/id_nome_listar_parti_adm"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/ic_aprovar_round" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
