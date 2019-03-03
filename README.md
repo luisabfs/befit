@@ -6,7 +6,7 @@
 1. Java
 2. Android SDK
 3. Firebase (database, auth configuration and media storage)
-4. Google Maps API
+4. Google Play Services (Location, Maps and Places)
 
 
 ## Print
