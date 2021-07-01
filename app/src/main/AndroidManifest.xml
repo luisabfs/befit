@@ -22,53 +22,53 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name="com.example.mayar.com.tcc.befit.Usuario.LoginActivity">
+        <activity android:name="com.example.mayar.befit.Usuario.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.mayar.com.tcc.befit.Usuario.CadastrarUsuarioActivity" />
+        <activity android:name="com.example.mayar.befit.Usuario.CadastrarUsuarioActivity" />
         <activity
-            android:name="com.example.mayar.com.tcc.befit.Usuario.MainActivity"
+            android:name="com.example.mayar.befit.Usuario.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme" />
-        <activity android:name="com.example.mayar.com.tcc.befit.Usuario.VerificaEmailActivity" />
-        <activity android:name="com.example.mayar.com.tcc.befit.Usuario.HelpActivity" />
-        <activity android:name="com.example.mayar.com.tcc.befit.Usuario.ConfiguracoesActivity" />
-        <activity android:name="com.example.mayar.com.tcc.befit.Usuario.UsuarioActivity" />
-        <activity android:name="com.example.mayar.com.tcc.befit.Atividade.AtividadeActivity" />
-        <activity android:name="com.example.mayar.com.tcc.befit.Atividade.BuscarAtividadeActivity" />
-        <activity android:name="com.example.mayar.com.tcc.befit.Atividade.CadastrarAtividadeActivity" />
-        <activity android:name="com.example.mayar.com.tcc.befit.Modalidade.CadastrarModalidadeActivity" />
-        <activity android:name="com.example.mayar.com.tcc.befit.Atividade.MinhasAtividadesActivity" />
-        <activity android:name="com.example.mayar.com.tcc.befit.Modalidade.ListarModalidadeActivity" />
-        <activity android:name="com.example.mayar.com.tcc.befit.Usuario.AlterarUsuarioActivity" />
-        <activity android:name="com.example.mayar.com.tcc.befit.Atividade.PerfilAtividadeActivity" />
-        <activity android:name="com.example.mayar.com.tcc.befit.Modalidade.ModalidadeAdmActivity" />
+        <activity android:name="com.example.mayar.befit.Usuario.VerificaEmailActivity" />
+        <activity android:name="com.example.mayar.befit.Usuario.HelpActivity" />
+        <activity android:name="com.example.mayar.befit.Usuario.ConfiguracoesActivity" />
+        <activity android:name="com.example.mayar.befit.Usuario.UsuarioActivity" />
+        <activity android:name="com.example.mayar.befit.Atividade.AtividadeActivity" />
+        <activity android:name="com.example.mayar.befit.Atividade.BuscarAtividadeActivity" />
+        <activity android:name="com.example.mayar.befit.Atividade.CadastrarAtividadeActivity" />
+        <activity android:name="com.example.mayar.befit.Modalidade.CadastrarModalidadeActivity" />
+        <activity android:name="com.example.mayar.befit.Atividade.MinhasAtividadesActivity" />
+        <activity android:name="com.example.mayar.befit.Modalidade.ListarModalidadeActivity" />
+        <activity android:name="com.example.mayar.befit.Usuario.AlterarUsuarioActivity" />
+        <activity android:name="com.example.mayar.befit.Atividade.PerfilAtividadeActivity" />
+        <activity android:name="com.example.mayar.befit.Modalidade.ModalidadeAdmActivity" />
 
         <!-- fcm -->
 
-        <service android:name="com.example.mayar.com.tcc.befit.Services.MyFirebaseMessagingService">
+        <service android:name="com.example.mayar.befit.Services.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service android:name="com.example.mayar.com.tcc.befit.Services.MyFirebaseInstanceIdService">
+        <service android:name="com.example.mayar.befit.Services.MyFirebaseInstanceIdService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
 
-        <activity android:name="com.example.mayar.com.tcc.befit.Modalidade.AlterarModalidadeActivity" />
-        <activity android:name="com.example.mayar.com.tcc.befit.Atividade.AtividadeMainActivity" />
-        <activity android:name="com.example.mayar.com.tcc.befit.Atividade.ListarParticipantesAdmActivity" />
-        <activity android:name="com.example.mayar.com.tcc.befit.Atividade.ChatActivity" />
-        <activity android:name="com.example.mayar.com.tcc.befit.Atividade.MapActivity" />
-        <activity android:name="com.example.mayar.com.tcc.befit.Atividade.AlterarAtividadeActivity" />
-        <activity android:name="com.example.mayar.com.tcc.befit.Atividade.ListarParticipantesActivity" />
-        <activity android:name="com.example.mayar.com.tcc.befit.Atividade.AvaliarAtividadeActivity"></activity>
+        <activity android:name="com.example.mayar.befit.Modalidade.AlterarModalidadeActivity" />
+        <activity android:name="com.example.mayar.befit.Atividade.AtividadeMainActivity" />
+        <activity android:name="com.example.mayar.befit.Atividade.ListarParticipantesAdmActivity" />
+        <activity android:name="com.example.mayar.befit.Atividade.ChatActivity" />
+        <activity android:name="com.example.mayar.befit.Atividade.MapActivity" />
+        <activity android:name="com.example.mayar.befit.Atividade.AlterarAtividadeActivity" />
+        <activity android:name="com.example.mayar.befit.Atividade.ListarParticipantesActivity" />
+        <activity android:name="com.example.mayar.befit.Atividade.AvaliarAtividadeActivity"></activity>
     </application>
 
 </manifest>
